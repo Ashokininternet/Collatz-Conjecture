@@ -17,8 +17,6 @@ Pick any positive integer. Apply two rules repeatedly:
 
 **The Conjecture:** No matter what number you start with, the sequence will always eventually reach **1**.
 
-Sounds trivial. Nobody has proven it.
-
 ---
 
 ## Features
@@ -26,8 +24,6 @@ Sounds trivial. Nobody has proven it.
 - Enter any positive integer and instantly compute its Collatz sequence
 - Displays the full sequence from start down to `1`
 - Shows total step count to reach `1`
-- Runs entirely in the browser — zero dependencies
-
 ---
 
 ## Build & Run
