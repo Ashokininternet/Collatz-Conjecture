@@ -12,7 +12,7 @@ Pick any positive integer. Apply two rules repeatedly:
 
 | Condition | Operation |
 |-----------|-----------|
-| `n` is even | `n = n / 2` |
+| `n` is even | `n = n % 2` |
 | `n` is odd | `n = 3n + 1` |
 
 **The Conjecture:** No matter what number you start with, the sequence will always eventually reach **1**.
