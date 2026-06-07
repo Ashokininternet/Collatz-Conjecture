@@ -2,30 +2,50 @@
 
 > *"Mathematics may not be ready for such problems."* — Paul Erdős
 
-An interactive, browser-based calculator that visualizes the **Collatz Conjecture** (3n+1 problem) — one of the most famous unsolved problems in mathematics.
+An terminal based calculator that visualizes the **Collatz Conjecture** (3n+1 problem) — one of the most famous unsolved problems in mathematics.
 
 ---
 
 ## What is the Collatz Conjecture?
 
-Pick **any positive integer**. Apply two dead-simple rules repeatedly:
+Pick any positive integer. Apply two rules repeatedly:
 
-| Condition | Rule |
-|-----------|------|
-| `n` is **even** | `n = n / 2` |
-| `n` is **odd** | `n = 3n + 1` |
+| Condition | Operation |
+|-----------|-----------|
+| `n` is even | `n = n / 2` |
+| `n` is odd | `n = 3n + 1` |
 
-**The Conjecture:** No matter what number you start with, you will *always* eventually reach **4** and go on a loop of **4**, **2** **1**.
+**The Conjecture:** No matter what number you start with, the sequence will always eventually reach **1**.
 
-Sounds trivial. Nobody has proven it. Ever.
+Sounds trivial. Nobody has proven it.
 
 ---
 
 ## Features
 
 - Enter any positive integer and instantly compute its Collatz sequence
-- Displays the **full sequence** from your number down to `1`
-- Shows **step count** to reach 1
-- Clean, minimal UI — runs entirely in the browser, zero dependencies
+- Displays the full sequence from start down to `1`
+- Shows total step count to reach `1`
+- Runs entirely in the browser — zero dependencies
+
+---
+
+## Build & Run
+
+**Prerequisites:** GCC must be installed on your machine.
+
+**Windows**
+```bash
+gcc -o main main.c
+./main.exe
+```
+
+**Linux / macOS**
+```bash
+gcc -o main_linux main_linux.c
+./main_linux
+```
+
+> If `gcc` is not found: install [MinGW](https://www.mingw-w64.org/) on Windows, or run `sudo apt install gcc` on Linux.
 
 ---
