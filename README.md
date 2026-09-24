@@ -32,14 +32,18 @@ Pick any positive integer. Apply two rules repeatedly:
 
 **Windows**
 ```bash
-gcc -o main main.c
+make main
 ./main.exe
 ```
 
 **Linux / macOS**
 ```bash
-gcc -o main_linux main_linux.c
+make main_linux
 ./main_linux
+```
+**Clear "binary / exe""**
+```bash
+make clean
 ```
 
 > If `gcc` is not found: install [MinGW](https://www.mingw-w64.org/) on Windows, or run `sudo apt install gcc` on Linux.
